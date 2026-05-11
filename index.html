@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Река. Слово. След — Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Река.Слово.След</a>
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="nature.html">Природа</a>
+            <a href="culture.html">Культура</a>
+            <a href="about.html">О проекте</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" style="background-image: url('images/hero/ob-river.jpg');">
+    <div class="hero-content">
+        <h1>Услышать душу Сибири:<br> путешествие по местам силы Обь-Иртышского бассейна</h1>
+        <p>«Путешествие по ландшафтам и культурным местам Обь-Иртышья»</p>
+        <a href="#map" class="btn">Начать путь →</a>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Река как жизнь</h2>
+        <p>Обь и Иртыш — главные реки Сибири. Ханты и манси веками жили на их берегах, русские переселенцы строили здесь первые остроги. Река кормила, поила, служила дорогой. Для многих она до сих пор — живое существо со своим характером.</p>
+        <p>Посмотришь вокруг: пойменные луга, таёжные урманы, бесконечные болота — и всё это Обь-Иртышский бассейн. Такие места редко где встретишь. Они не просто красивые — они сформировали свой уклад жизни, где коренные народы и русские первопроходцы научились жить рядом, перенимать друг у друга лучшее.</p>
+        <blockquote>«Природа тут не фон, а то, что растит человека и держит общество».</blockquote>
+    </div>
+</section>
+
+
+<section id="map">
+    <div class="container">
+        <h2>След на карте</h2>
+        <div class="static-map">
+            <img src="images/map/map.jpg" alt="Карта Обь-Иртышского бассейна" class="static-map-img">
+        </div>
+        <div class="locations-list-clickable">
+            <div class="location-card-clickable" data-loc="0">📍 Старый Тарский тракт (Омская обл.)</div>
+            <div class="location-card-clickable" data-loc="1">⛪ Село Абалак (Тобольск)</div>
+            <div class="location-card-clickable" data-loc="2">🌲 Юганский заповедник (ХМАО)</div>
+            <div class="location-card-clickable" data-loc="3">🌾 Пойма Иртыша (Омск)</div>
+            <div class="location-card-clickable" data-loc="4">💧 Кондинские озера</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Слово о реке</h2>
+        <p>Стихи сибирских поэтов читают студенты КИТЭК. Записи сделаны специально для проекта.</p>
+        <div class="poetry-grid">
+            <div class="poet-card">
+                <img class="poet-photo" src="images/poets/pavel-vasiliev.jpg" alt="Павел Васильев">
+                <h3>Павел Васильев</h3>
+                <p>отрывок «Иртыш» читает Инга Унуковская</p>
+                <audio controls src="audio/0422.MP3"></audio>
+                
+            </div>
+            <div class="poet-card">
+                <img class="poet-photo" src="images/poets/ivlev.jpg" alt="Владимир Ивлев">
+                <h3>Владимир Ивлев</h3>
+                <p>отрывок «Ой, ты Обь, река большая!» читает Руслан Шектыбаев</p>
+                <audio controls src="audio/0422(1).MP3"></audio>
+            </div>
+            <div class="poet-card">
+                <img class="poet-photo" src="images/poets/mansi-legend.jpg" alt="Мансийская легенда">
+                <h3>Легенда манси</h3>
+                <p>«Как Обь стала великой рекой»</p>
+                <audio controls src="audio/mansu.mp3"></audio>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="quote-block">
+            <div class="quote-icon">❝</div>
+            <p class="quote-text">«Где Обь с Иртышом в объятьях слились, А кедры и пихты их окружили, В холмах, где ветра со снегом сошлись, Встал город в тайге великой Сибири»</p>
+            <p class="quote-author">Евгений Горленко</p>
+            <div class="ornament-border"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-grid">
+        <div>🏛 Разработано студентами 21ИСР БПОУ «КИТЭК»</div>
+        <div>© Омск 2026 «Река. Слово. След»</div>
+    </div>
+</footer>
+
+
+<div id="popup" class="popup-overlay">
+    <div class="popup-card">
+        <span class="close-popup">&times;</span>
+        <div id="popup-content"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
